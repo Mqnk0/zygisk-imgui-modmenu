@@ -13,9 +13,11 @@ jobs:
         java-version: 11
         cache: gradle
     - run: |
+        mkdir -p out  # outフォルダーがない場合は作成
         chmod +x ./gradlew
         ./gradlew :module:assembleRelease
+    - run: ls -R out/
     - uses: actions/upload-artifact@v3
       with:
         name: zygisk-imgui-modmenu
-        path: out/magisk_module_release/
+        path: out/*.zip
