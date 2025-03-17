@@ -3,6 +3,6 @@
 
 // TODO: change this
 #define TargetLibName "libil2cpp.so"
-#define GamePackageName "com.game.packagename"
+#define GamePackageName "jp.litmus.ent.playingescape.pro"
 
 #endif //ZYGISK_IMGUI_MODMENU_GAME_H
